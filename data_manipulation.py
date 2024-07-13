@@ -395,17 +395,10 @@ def main():
     if False: # union of indexes --> NaN value for non overlapping indexes 
         s1 = pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])
         s2 = pd.Series([10, 20, 30, 40], index=['e', 'f', 'g', 'h'])
-        print (s1 + s2)
-
-#with numpy we can't modify corresponding terms from 2 numpy arrays , while 
-#with pandas we can do it cuz we can handle indexes  
-# vectorized operations are performed only on the coressponding indexes between 
-#series , if an index doesn't have a corresponding index in a new array : 
-# new array bigger then the 2 original ones 
-# index with no correspondance have NaN value    
+        print (s1 + s2) 
 
 
-######################## apply() on series (reverse names) ###################
+######################## apply() on series to reverse names     ###################
 
 
 # Example pandas apply() usage (although this could have been done
